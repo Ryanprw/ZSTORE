@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome! -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">  -->
+
+    <title>Hema Store</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand font-weight-bold" href="#">HEMA STORE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- cart -->
+    <section class="cart my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="font-weight-bold">YOUR CART</h2>
+            <p class="font-weight-light" style="font-size: 18px;">
+              Make sure to double check your items.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+            <div class="accordion" id="cartAccordion">
+              <!-- your items -->
+              <div class="card">
+                <div class="card-header bg-white" id="yourCart">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#cart-items"
+                      aria-expanded="true"
+                    >
+                      Your Items (2)
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="cart-items"
+                  class="collapse show"
+                  aria-labelledby="yourCart"
+                  data-parent="#cartAccordion"
+                >
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <img
+                          src="img/product/isla_dresser.png"
+                          alt="product"
+                          width="50px"
+                        />
+                      </div>
+                      <div class="col">
+                        <h5>Isla Dresser</h5>
+                        <p class="font-weight-light">1 items</p>
+                      </div>
+                      <div class="col align-self-center">
+                        <h6>IDR 320.000</h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-2">
+                        <img
+                          src="img/product/lana_sofa.png"
+                          alt="product"
+                          width="50px"
+                        />
+                      </div>
+                      <div class="col">
+                        <h5>Lana Sofa</h5>
+                        <p class="font-weight-light">1 items</p>
+                      </div>
+                      <div class="col align-self-center">
+                        <h6>IDR 670.000</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- your address -->
+              <div class="card">
+                <div class="card-header bg-white" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#address"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Your Address
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="address"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#cartAccordion"
+                >
+                  <div class="card-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="John Smith"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="address">Address</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="address"
+                          placeholder="54 Somewhere St."
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phone"
+                          placeholder="514-000-000"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="city">City</label>
+                        <select id="city" class="custom-select">
+                          <option selected>New York</option>
+                          <option>Los Angeles</option>
+                          <option>Chicago</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- checkout -->
+              <div class="card">
+                <div class="card-header bg-white" id="headingThree">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#checkout"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Checkout
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="checkout"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#cartAccordion"
+                >
+                  <div class="card-body">
+                    <!-- Cart Items -->
+                    <div class="row">
+                      <div class="col-2">
+                        <img
+                          src="img/product/isla_dresser.png"
+                          alt="product"
+                          width="50px"
+                        />
+                      </div>
+                      <div class="col">
+                        <h5>Isla Dresser</h5>
+                        <p class="font-weight-light">1 items</p>
+                      </div>
+                      <div class="col align-self-center">
+                        <h6>IDR 320.000</h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-2">
+                        <img
+                          src="img/product/lana_sofa.png"
+                          alt="product"
+                          width="50px"
+                        />
+                      </div>
+                      <div class="col">
+                        <h5>Lana Sofa</h5>
+                        <p class="font-weight-light">1 items</p>
+                      </div>
+                      <div class="col align-self-center">
+                        <h6>IDR 670.000</h6>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col">
+                        <h5>Courier</h5>
+                        <p class="font-weight-light">
+                          One Hour Express (Drone)
+                        </p>
+                      </div>
+                      <div class="col align-self-center">
+                        <h6>Free</h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <h5>Discount</h5>
+                        <p class="font-weight-light">70% Promo all items</p>
+                      </div>
+                      <div class="col align-self-center">
+                        <h6 class="text-danger">- IDR 910.000</h6>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col">
+                        <h5 class="font-weight-bold">Total</h5>
+                      </div>
+                      <div class="col">
+                        <h6 class="font-weight-bold">IDR 390.000</h6>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row mt-4">
+                      <div class="col-6">
+                        <a
+                          href="single.html"
+                          class="btn btn-outline-secondary bg-white text-dark btn-block"
+                          >Cancel</a
+                        >
+                      </div>
+                      <div class="col-6">
+                        <button
+                          type="button"
+                          class="btn btn-secondary btn-block"
+                          data-toggle="modal"
+                          data-target="#checkoutModal"
+                        >
+                          Checkout
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of cart -->
+
+    <!-- checkout modal -->
+    <div
+      class="modal fade"
+      id="checkoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+              <div class="col text-center">
+                <a
+                  href="https://www.freepik.com/free-photos-vectors/shopping"
+                  target="_blank"
+                >
+                  <img
+                    src="img/checkout_success.jpg"
+                    alt="checkout_success"
+                    width="250px"
+                  />
+                </a>
+                <h2 class="mt-3">
+                  CHECKOUT COMPLETE!
+                </h2>
+                <p>
+                  Your items will be arrived in couple days. <br />(Unless if
+                  the drone got lost)
+                </p>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col text-center">
+                <a href="index.html" class="btn btn-outline-secondary">
+                  Home
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of checkout modal -->
+
+    <!-- footer -->
+    <footer class="text-center border-top">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <a href="#" class="social-link ml-2">
+              <img src="img/social/fb.png" alt="fb icon" />
+            </a>
+            <a
+              href="https://www.twitter.com/rpopcornn"
+              class="social-link ml-2"
+            >
+              <img src="img/social/twitter.png" alt="twitter icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/rpangarego"
+              class="social-link ml-2"
+            >
+              <img src="img/social/ig.png" alt="ig icon" />
+            </a>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <p>
+              Designed by
+              <a
+                href="https://www.github.com/rpangarego"
+                style="color: #414141;"
+                >Ronaldo Pangarego</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- Font Awesome JS -->
+    <script src="js/all.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
